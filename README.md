@@ -1,6 +1,6 @@
 # <a href="https://github.com/OnlyRad/Telegram">Telegram</a>
 
-## How Created bot Telegram
+## <a href="https:t.me/onlyRad">Telegram Channel</a> | <a href="https://github.com/OnlyRad">GitHub</a> | <a href="https:rubika.ir/TheLinux">Rubika Channel</a>
 
 ### لطفا مراحل را با دقت انجام بدید که به مشکل نخورید
 
@@ -73,7 +73,51 @@ def Callback(client, call):
     if call.data == 'GER':
         app.edit_message_text(call.from_user.id , call.message.id , "متن پیام نشان دهنده"
 ```
-<hr>
 
-### برای دیدن سورس کامل خودم میتونید به فایل app.py مراجعه کنید
+------
+## Forward Message
+ پارامتر های مورد نیاز برای فروارد مسیج:
+ - چت آیدی مورد نظر برای ارسال پیام
+ - چت آیدی منبع<br>
+ تا اینجا کافیه بقیه پارامتر ها برای  موارد خاص هستند
+-----
 
+### به نمونه ی زیر دقت کنید
+
+```python
+from pyrogram import client
+
+app = client(
+    "اسم سشن",
+    "API-ID",
+    "API-Hash",
+    "Bot-Token"
+)
+@app.on_message()
+async def forwardmessage(client , message):
+    await app.forward_messages("Chat ID" , "From chat ID")
+```
+
+------
+## Send Photo
+پارامتر های مورد نیاز برای ارسال عکس:
+- چت آیدی مورد نظر برای ارسال عکس
+- آدرس فایل مورد نظر / میتونید آدرس url بهش بدید تا ارسال کنه
+- کپشن فایل (اختیاری)
+- برای بولد کردن و مارک داون های html
+-----
+
+### به نمونه ی زیر دقت کنید
+```python
+from pyrogram import client
+
+app = client(
+    "اسم سشن",
+    "API-ID",
+    "API-Hash",
+    "Bot-Token"
+)
+@app.on_message()
+async def send_photo(client,message):
+    await app.send_photo("Chat ID","Photo/URL Photo","Caption","Parse_mode")
+```
