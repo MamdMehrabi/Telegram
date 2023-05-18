@@ -1,10 +1,10 @@
 # <a href="https://github.com/OnlyRad/Telegram">Telegram</a>
 
-## <a href="https:t.me/onlyRad">Telegram Channel</a> | <a href="https://github.com/OnlyRad">GitHub</a> | <a href="https:rubika.ir/TheLinux">Rubika Channel</a>
+<a href="https:t.me/onlyRad">Telegram Channel</a> | <a href="https://github.com/OnlyRad">GitHub</a> | <a href="https:rubika.ir/TheLinux">Rubika Channel</a>
 
-### لطفا مراحل را با دقت انجام بدید که به مشکل نخورید
+لطفا مراحل را با دقت انجام بدید که به مشکل نخورید
 
-## نصب کتابخونه و نحوه ایمپورت آن
+نصب کتابخونه و نحوه ایمپورت آن
 
 ```python
 pip install pyrogram
@@ -19,7 +19,7 @@ app = Client(
     "Bot-Token"
 )
 ```
-## ساخت بات ساده برای جواب دادن
+ ساخت بات ساده برای جواب دادن
 
 ```python
 @app.on_handler()
@@ -27,46 +27,30 @@ async def start(client , message):
     await app.send_message(message.chat.id , "متن پیامتون")
 app.run()
 ```
-### حتما حواستون باشه بصورت ایسینک باشه
+ حتما حواستون باشه بصورت ایسینک باشه
 
 
 
-## ساخت کیبورد اینلاین
+ساخت کیبورد اینلاین(کیبورد داخلی)
 
 ```python
+from pyrogram.type import *
 @app.on_message()
 async def start(client , message):
-    text = message.text
     mark = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Config GER🇩🇪","GER"),
-                InlineKeyboardButton("Config USA🇺🇸" , "USA"),
-                InlineKeyboardButton("Config CAN🇨🇦", "CAN"),
-            ] ,
-            [
-                InlineKeyboardButton("Config","Config")
-            ],
-            [
-                InlineKeyboardButton("Telegram",url="t.me/OnlyRad"),
-                InlineKeyboardButton("Rubika",url="rubika.ir/TheLinux"),
-                InlineKeyboardButton("GitHub", url="github.com/OnlyRad")
-            ]
+                InlineKeyboardButton("نام دکمه","CallBackData")
         ]
     )
         
-    await app.send_message(message.chat.id , "متن پیامتون")
+    await app.send_message(message.chat.id , "متن پیامتون",replymarkup=mark)
     
 app.run()
 ```
-## اگر میخواید از کیبورد ها استفاده کنید باید این قسمت رو به اول کدتون اضافه کنید
-```python
-from pyrogram.type import *
-```
+خب اینجا باید جوابی به کال بک دیتا بدیم(یکی از پارامتر های اینلاین کیبورد باتن)<br>
+اگر  اینکارو انجام ندید  وقتی کاربر روی دکمه ها کلیک کنه هیچ اتفاقی نمیوفته پس حتما اضافه اش کنید به سورستون
 
-#### خب اینجا به کدهای قبلی یه سری متود اضافه کردیم ولی یه مشکلی هست<br>
-مشکل اینه که کاربر روی کیبورد کلیک کنه اتفاقی نمیوفته<br>
-توی کد پایین این مشکلو حل میکنیم
 ```python
 @app.on_callback_query()
 def Callback(client, call):
@@ -82,7 +66,7 @@ def Callback(client, call):
  تا اینجا کافیه بقیه پارامتر ها برای  موارد خاص هستند
 -----
 
-### به نمونه ی زیر دقت کنید
+به نمونه ی زیر دقت کنید
 
 ```python
 from pyrogram import client
@@ -106,8 +90,7 @@ async def forwardmessage(client , message):
 - کپشن فایل (اختیاری)
 - برای بولد کردن و مارک داون های html
 -----
-
-### به نمونه ی زیر دقت کنید
+به نمونه ی زیر دقت کنید
 ```python
 from pyrogram import client
 
@@ -121,3 +104,4 @@ app = client(
 async def send_photo(client,message):
     await app.send_photo("Chat ID","Photo/URL Photo","Caption","Parse_mode")
 ```
+لطفا برای حمایت از من استار یادتون نره و صفحه رو فالو کنید که بزودی آپدیت های خفنی میزارم
