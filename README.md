@@ -1,7 +1,9 @@
 # <a href="https://github.com/OnlyRad/Telegram">Telegram</a>
 
-<a href="https:t.me/onlyRad">Telegram Channel</a> | <a href="https://github.com/OnlyRad">GitHub</a> | <a href="https:rubika.ir/TheLinux">Rubika Channel</a>
+<img src="_storage_emulated_0_Android_data_app.rbmain.a_cache_10727723845850_2.jpg" alt="Image">
 
+<a href="https:t.me/RootManagers">Telegram Channel</a> | <a  href="https://github.com/OnlyRad">GitHub</a> | <a href="https:rubika.ir/TheLinux">Rubika Channel</a>
+| <a href="youtube.com/OnlyMamad">YouTube</a> <br> <br>
 لطفا مراحل را با دقت انجام بدید که به مشکل نخورید
 
 نصب کتابخونه و نحوه ایمپورت آن
@@ -105,3 +107,7 @@ async def send_photo(client,message):
     await app.send_photo("Chat ID","Photo/URL Photo","Caption","Parse_mode")
 ```
 لطفا برای حمایت از من استار یادتون نره و صفحه رو فالو کنید که بزودی آپدیت های خفنی میزارم
+
+<a href="https:t.me/RootManagers">Telegram Channel</a> | <a  href="https://github.com/OnlyRad">GitHub</a> | <a href="https:rubika.ir/TheLinux">Rubika Channel</a>
+| <a href="youtube.com/OnlyMamad">YouTube</a>  <br>
+چنل تلگرام رو از دست ندید چون دوره ساخت بات تلگرام رو آپلود میکنیم اونجا و خلاصه نیازتون میشه!
