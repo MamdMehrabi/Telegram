@@ -23,7 +23,8 @@ app = Client(
 @app.on_handler()
 async def start(client , message):
     await app.send_message(message.chat.id , "متن پیامتون")
-app.run()
+if __name__ == '__main__':
+    app.run()
 ```
 
 <h4>ادامه ی آموزش متد ها در قسمت issue هستند</h4>
