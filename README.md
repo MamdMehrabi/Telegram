@@ -34,5 +34,5 @@ if __name__ == '__main__':
 
 
 <hr>
-<a href="https:t.me/onlyRad">Telegram Channel</a> | <a href="https://github.com/OnlyRad">GitHub</a> | <a href="https:rubika.ir/TheLinux">Rubika Channel</a> | 
-<a href="https:youtube.com/OnlyMamad">YouTube</a>
+<a href="https:t.me/TheCommit">Telegram</a> | <a href="https://github.com/OnlyRad">GitHub</a> | <a href="https:rubika.ir/TheLinux">Rubika Channel</a> | 
+<a href="https:youtube.com/OnlyCommit">YouTube</a>
