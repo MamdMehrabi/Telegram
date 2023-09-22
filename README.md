@@ -1,7 +1,7 @@
 # <a href="https://github.com/OnlyRad/Telegram">Telegram</a>
 <img src="_storage_emulated_0_Android_data_app.rbmain.a_cache_10727723845850_2.jpg" alt="Image">
-<a href="https:t.me/onlyRad">Telegram Channel</a> | <a href="https://github.com/OnlyRad">GitHub</a> | <a href="https:rubika.ir/TheLinux">Rubika Channel</a> | 
-<a href="https:youtube.com/OnlyMamad">YouTube</a>
+<a href="https:t.me/TheCommit">Telegram Channel</a> | <a href="https://github.com/OnlyRad">GitHub</a> | <a href="https:rubika.ir/TheLinux">Rubika Channel</a> | 
+<a href="https:youtube.com/OnlyCommit">YouTube</a>
 <h3 align="center">آموزش نصب کتابخانه و استارت</h3>
 
 ```python
