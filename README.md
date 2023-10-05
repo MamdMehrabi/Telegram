@@ -14,7 +14,6 @@ app = Client(
     "Name",
     "API-ID",
     "API-Hash",
-    "Bot-Token"
 )
 ```
 <h3 align="center">سینتکس ارسال پیام</h3>
